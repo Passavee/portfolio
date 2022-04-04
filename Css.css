@@ -57,7 +57,7 @@ section .cards .text-card h3 {
 
 section:nth-child(1) {
     color: #fff;
-    background-image: url("fireworkBg.gif");
+    background-image: url("posn.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -65,14 +65,14 @@ section:nth-child(1) {
 
 section:nth-child(2) {
     color: black;
-    background-image: url("bg1.JPG");
+    background-image: url("posn.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 section:nth-child(3) {
-    background-image: url('Bg2.jpg');
+    background-image: url('faceRecog.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -80,7 +80,7 @@ section:nth-child(3) {
 
 section:nth-child(4) {
     color: #1D212B;
-    background-image: url('profile.jpg');
+    background-image: url('chatbot.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -88,7 +88,7 @@ section:nth-child(4) {
 
 section:nth-child(5) {
     color: #1D212B;
-    background-image: url('covid-virus-3d-modeling.jpg');
+    background-image: url('virus.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -114,6 +114,11 @@ section:nth-child(5) {
 
 .mySlides {
     display: none;
+}
+
+.inIcon{
+    height: 90%;
+    width: 90%;
 }
 
 #navbar {
@@ -143,9 +148,10 @@ section:nth-child(5) {
 }
 
 #profilePic {
+    border-radius: 10%;
     float: right;
     margin: 0 0 0 15px;
-    border: 5px solid #fff;
+    border: 15px solid lightblue;
     height: 40%;
     width: 30%;
 }
