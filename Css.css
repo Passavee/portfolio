@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0px;
+    background-color: #3778C2;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1 {
+    font-size: 60px;
+}
+
+section .container {
+    margin: 100px;
+}
+
+section .cards {
+    display: flex;
+}
+
+section .cards .text-card {
+    background: whitesmoke;
+    opacity: 90%;
+    margin: 20px;
+    padding: 20px;
+}
+
+section .cards .text-card h3 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+    section h1 {
+        font-size: 40px;
+    }
+
+    section .cards {
+        flex-direction: column;
+    }
+}
+
+section:nth-child(1) {
+    color: #fff;
+    background-image: url("fireworkBg.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section:nth-child(2) {
+    color: black;
+    background-image: url("bg1.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section:nth-child(3) {
+    background-image: url('Bg2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section:nth-child(4) {
+    color: #1D212B;
+    background-image: url('profile.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section:nth-child(5) {
+    color: #1D212B;
+    background-image: url('covid-virus-3d-modeling.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.profileContainer {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: whitesmoke;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.mySlides {
+    display: none;
+}
+
+#navbar {
+    background-color: #28559A;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#navbar a:hover:not(.active) {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar .active {
+    background-color: #3EB650;
+}
+
+#profilePic {
+    float: right;
+    margin: 0 0 0 15px;
+    border: 5px solid #fff;
+    height: 40%;
+    width: 30%;
+}
